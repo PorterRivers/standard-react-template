@@ -5,14 +5,15 @@
 	"main": "index.tsx",
 	"scripts": {
 		"start": "webpack serve --config webpack.dev.config.ts",
-		"build": "webpack --config webpack.prod.config.ts"
+		"build": "webpack --config webpack.prod.config.ts",
+		"format-all": "npx prettier --write '**/*'"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/PorterRivers/standard-react-template.git"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "Porter Rivers",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/PorterRivers/standard-react-template/issues"
