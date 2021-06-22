@@ -1,7 +1,8 @@
+/node_modules/
+/build/
+/coverage/
 *.code-workspace
-node_modules
-build
-LICENSE
 .gitignore
 .prettierignore
+LICENSE
 README.md
