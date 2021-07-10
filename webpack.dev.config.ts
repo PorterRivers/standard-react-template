@@ -57,6 +57,7 @@ const config: Configuration = {
 		open: true,
 		hot: true,
 	},
+	externals: ['crypto'],
 };
 
 export default config;
