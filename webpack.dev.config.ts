@@ -40,6 +40,7 @@ const config: Configuration = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
+			favicon: 'src/favicon.png',
 		}),
 		new HotModuleReplacementPlugin(),
 		new ForkTsCheckerWebpackPlugin({
@@ -54,8 +55,8 @@ const config: Configuration = {
 		contentBase: path.join(__dirname, 'build'),
 		historyApiFallback: true,
 		port: 4000,
-		open: true,
 		hot: true,
+		host: '192.168.0.17',
 	},
 	externals: ['crypto'],
 };

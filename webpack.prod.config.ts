@@ -37,6 +37,7 @@ const config: webpack.Configuration = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
+			favicon: 'src/favicon.png',
 		}),
 		new ForkTsCheckerWebpackPlugin({
 			async: false,
