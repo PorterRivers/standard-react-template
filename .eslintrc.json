@@ -11,7 +11,9 @@
 		"react-hooks/exhaustive-deps": "warn",
 		"react/prop-types": "off",
 		"max-len": ["warn", { "code": 120 }],
-		"no-console": "warn"
+		"no-console": "warn",
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off"
 	},
 	"settings": {
 		"react": {
