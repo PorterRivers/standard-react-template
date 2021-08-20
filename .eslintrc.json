@@ -24,6 +24,13 @@
 		}
 	},
 	"globals": {
-		"JSX": "readonly"
+		"JSX": "readonly",
+		"test": "readonly",
+		"expect": "readonly",
+		"process": "readonly",
+		"require": "readonly",
+		"document": "readonly",
+		"it": "readonly",
+		"describe": "readonly"
 	}
 }
