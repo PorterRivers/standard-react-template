@@ -5,13 +5,15 @@
 		"sourceType": "module"
 	},
 	"plugins": ["@typescript-eslint", "react-hooks", "jsx-a11y"],
-	"extends": ["plugin:react/recommended", "plugin:jsx-a11y/recommended", "prettier"],
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended", "prettier"],
 	"rules": {
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
 		"react/prop-types": "off",
 		"max-len": ["warn", { "code": 120 }],
 		"no-console": "warn",
+		"no-var": "error",
+		"prefer-const": "warn",
 		"react/jsx-uses-react": "off",
 		"react/react-in-jsx-scope": "off"
 	},
@@ -20,5 +22,8 @@
 			"pragma": "React",
 			"version": "detect"
 		}
+	},
+	"globals": {
+		"JSX": "readonly"
 	}
 }
