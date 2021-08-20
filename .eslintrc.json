@@ -12,8 +12,6 @@
 		"react/prop-types": "off",
 		"max-len": ["warn", { "code": 120 }],
 		"no-console": "warn",
-		"no-var": "error",
-		"prefer-const": "warn",
 		"react/jsx-uses-react": "off",
 		"react/react-in-jsx-scope": "off"
 	},
@@ -23,14 +21,13 @@
 			"version": "detect"
 		}
 	},
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true,
+		"jest": true
+	},
 	"globals": {
-		"JSX": "readonly",
-		"test": "readonly",
-		"expect": "readonly",
-		"process": "readonly",
-		"require": "readonly",
-		"document": "readonly",
-		"it": "readonly",
-		"describe": "readonly"
+		"JSX": "readonly"
 	}
 }

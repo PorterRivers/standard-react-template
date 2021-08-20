@@ -8,7 +8,8 @@
 		"build": "webpack --config webpack.prod.config.ts",
 		"test": "jest --watch",
 		"coverage": "jest --coverage",
-		"format-all": "npx prettier --write '**/*'"
+		"format-all": "npx prettier --write '**/*'",
+		"lint-all": "eslint . --ext .js,.jsx,.ts,.tsx"
 	},
 	"repository": {
 		"type": "git",
