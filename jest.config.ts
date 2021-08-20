@@ -15,6 +15,7 @@ const config: Config.InitialOptions = {
 	testEnvironment: 'jsdom',
 	testPathIgnorePatterns: ['./node_modules/', './build/', './coverage/'],
 	verbose: true,
+	setupFilesAfterEnv: ['./scripts/jestSetup.ts'],
 };
 
 export default config;
