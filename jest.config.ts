@@ -1,3 +1,4 @@
+/* eslint-disable sonarjs/no-duplicate-string */
 import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {

@@ -9,7 +9,7 @@
 		"test": "jest --watch",
 		"coverage": "jest --coverage",
 		"format-all": "npx prettier --write '**/*'",
-		"lint-all": "eslint . --ext .js,.jsx,.ts,.tsx"
+		"lint:src": "eslint --ext .js,.jsx,.ts,.tsx src/"
 	},
 	"repository": {
 		"type": "git",
@@ -59,6 +59,7 @@
 		"eslint-plugin-jsx-a11y": "^6.4.1",
 		"eslint-plugin-react": "^7.24.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-sonarjs": "^0.10.0",
 		"eslint-webpack-plugin": "^2.5.4",
 		"fork-ts-checker-webpack-plugin": "^6.2.12",
 		"html-webpack-plugin": "^5.3.1",

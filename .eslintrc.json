@@ -4,12 +4,13 @@
 		"ecmaVersion": 2018,
 		"sourceType": "module"
 	},
-	"plugins": ["@typescript-eslint", "react-hooks", "jsx-a11y"],
+	"plugins": ["@typescript-eslint", "react-hooks", "jsx-a11y", "sonarjs"],
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:react/recommended",
 		"plugin:jsx-a11y/recommended",
+		"plugin:sonarjs/recommended",
 		"prettier"
 	],
 	"rules": {
