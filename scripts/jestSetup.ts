@@ -19,4 +19,5 @@ const deleteAllCookies = () => {
 global.afterEach(() => {
 	cleanup();
 	deleteAllCookies();
+	jest.useRealTimers();
 });
