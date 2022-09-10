@@ -1,4 +1,3 @@
-import { Container, Typography } from '@material-ui/core';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 
@@ -9,9 +8,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const App = () => (
 	<main>
-		<Container>
-			<Typography component={'h1'}>My React and Typescript Template.</Typography>
-		</Container>
+		<h1>My React and Typescript Template.</h1>
 	</main>
 );
 
