@@ -8,9 +8,11 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const App = () => (
-	<Container>
-		<Typography>My React and Typescript Template.</Typography>
-	</Container>
+	<main>
+		<Container>
+			<Typography component={'h1'}>My React and Typescript Template.</Typography>
+		</Container>
+	</main>
 );
 
 ReactDOM.render(

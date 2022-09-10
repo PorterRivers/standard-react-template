@@ -52,7 +52,9 @@ const config: Configuration = {
 	],
 	devtool: 'inline-source-map',
 	devServer: {
-		contentBase: path.join(__dirname, 'build'),
+		static: {
+			directory: path.join(__dirname, 'build'),
+		},
 		historyApiFallback: true,
 		port: 9000,
 		hot: true,
