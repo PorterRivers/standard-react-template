@@ -1,10 +1,15 @@
-/* eslint-disable sonarjs/no-duplicate-string */
 import type { Config } from '@jest/types';
+
+const directories = {
+	NODE_MODULES: './node_modules/',
+	BUILD: './build/',
+	COVERAGE: './coverage/',
+};
 
 const config: Config.InitialOptions = {
 	collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
-	coverageDirectory: './coverage/',
-	coveragePathIgnorePatterns: ['./node_modules/', './build/', './coverage/'],
+	coverageDirectory: directories.COVERAGE,
+	coveragePathIgnorePatterns: [directories.NODE_MODULES, directories.BUILD, directories.COVERAGE],
 	coverageThreshold: {
 		global: {
 			branches: 80,
@@ -14,7 +19,7 @@ const config: Config.InitialOptions = {
 		},
 	},
 	testEnvironment: 'jsdom',
-	testPathIgnorePatterns: ['./node_modules/', './build/', './coverage/'],
+	testPathIgnorePatterns: [directories.NODE_MODULES, directories.BUILD, directories.COVERAGE],
 	verbose: true,
 	setupFilesAfterEnv: ['./scripts/jestSetup.ts'],
 };
