@@ -54,9 +54,8 @@ const config: Configuration = {
 	devServer: {
 		contentBase: path.join(__dirname, 'build'),
 		historyApiFallback: true,
-		port: 4000,
+		port: 9000,
 		hot: true,
-		host: '192.168.0.17',
 	},
 	externals: ['crypto'],
 };
