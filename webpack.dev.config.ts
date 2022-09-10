@@ -54,6 +54,10 @@ const config: Configuration = {
 		static: {
 			directory: path.join(__dirname, 'build'),
 		},
+		client: {
+			overlay: false,
+			logging: 'none',
+		},
 		historyApiFallback: true,
 		port: 9000,
 		hot: true,

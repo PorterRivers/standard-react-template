@@ -9,7 +9,7 @@ const directories = {
 const config: Config.InitialOptions = {
 	collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
 	coverageDirectory: directories.COVERAGE,
-	coveragePathIgnorePatterns: [directories.NODE_MODULES, directories.BUILD, directories.COVERAGE],
+	coveragePathIgnorePatterns: [directories.NODE_MODULES, directories.BUILD, directories.COVERAGE, 'index.tsx'],
 	coverageThreshold: {
 		global: {
 			branches: 80,

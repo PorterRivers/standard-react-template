@@ -1,20 +1,16 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import AppShell from './components/AppShell/AppShell';
 
 if (process.env.NODE_ENV !== 'production') {
 	const axe = require('@axe-core/react');
 	axe(React, ReactDOM, 1000);
 }
 
-const App = () => (
-	<main>
-		<h1>My React and Typescript Template.</h1>
-	</main>
-);
-
-ReactDOM.render(
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+createRoot(document.getElementById('root')!).render(
 	<StrictMode>
-		<App />
-	</StrictMode>,
-	document.getElementById('root')
+		<AppShell />
+	</StrictMode>
 );
