@@ -2,6 +2,7 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import AppShell from './components/AppShell/AppShell';
+import './index.css';
 
 if (process.env.NODE_ENV !== 'production') {
 	const axe = require('@axe-core/react');
