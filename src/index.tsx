@@ -1,9 +1,11 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
+
 import AppShell from './components/AppShell/AppShell';
 import './index.css';
 
+// Outside of production builds, output axe warnings to the console
 if (process.env.NODE_ENV !== 'production') {
 	const axe = require('@axe-core/react');
 	axe(React, ReactDOM, 1000);

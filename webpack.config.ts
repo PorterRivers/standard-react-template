@@ -3,9 +3,8 @@ import ESLintPlugin from 'eslint-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-
 import { Configuration as WebpackConfiguration, WebpackPluginInstance } from 'webpack';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
 
 interface UnifiedConfiguration extends WebpackConfiguration {
