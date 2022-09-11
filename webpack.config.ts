@@ -3,6 +3,7 @@ import ESLintPlugin from 'eslint-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 import { Configuration as WebpackConfiguration, WebpackPluginInstance } from 'webpack';
 import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-server';
@@ -82,7 +83,10 @@ const prodConfig: WebpackConfiguration = {
 		filename: '[name].[contenthash].js',
 		publicPath: '',
 	},
-	plugins: [...commonPlugins, new CleanWebpackPlugin()],
+	plugins: [...commonPlugins, new CleanWebpackPlugin(), new BundleAnalyzerPlugin()],
+	performance: {
+		hints: 'error',
+	},
 };
 
 module.exports = [devConfig, prodConfig];
